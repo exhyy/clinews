@@ -1,0 +1,16 @@
+[package]
+name = "clinews"
+version = "0.1.0"
+edition = "2021"
+
+description = " A simple cli news reader app"
+license = "MIT"
+authors = ["Exception"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+newsapi = {path = "./newsapi", features = ["async"]}
+termimad = "0.20.6"
+tokio = {version = "1.24.1", features = ["full"]}
